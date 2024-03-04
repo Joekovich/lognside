@@ -1,0 +1,111 @@
+/* {
+    box-sizing: border-box;
+} */
+
+ body {
+    background: linear-gradient(#1d1d1d, #4d4d4d);
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-image: url('nsibidi.jpg');
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 18px;
+    backdrop-filter: blur(3px) saturate(195%);
+    -webkit-backdrop-filter: blur(3px) saturate(195%);
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 25px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color:#333;
+    color: #ccc;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+  }
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+    color: #333;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: relative;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: #333;
+    transform: translateY(-30px);
+}
